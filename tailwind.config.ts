@@ -9,8 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#4268b1',
-        accent: '#ff6b6b',
+        primary: {
+          DEFAULT: '#4268b1',
+          hover: '#3e74dc',
+        },
+        accent: {
+          DEFAULT: '#ff6b6b',
+          hover: '#dc5151',
+        },
         gray: '#a0a5b6',
         lightBlue: '#e8edf3',
         bg: '#fff',
@@ -20,21 +26,27 @@ const config: Config = {
         poppins: 'var(--font-poppins)',
       },
       fontSize: {
-        '48-700': ['48px', { fontWeight: '700', lineHeight: '100%' }],
-        '42-700': ['42px', { fontWeight: '700', lineHeight: '100%' }],
-        '36-700': ['36px', { fontWeight: '700', lineHeight: '100%' }],
-        '32-700': ['32px', { fontWeight: '700', lineHeight: '100%' }],
+        '48-700': ['48px', { fontWeight: '700', lineHeight: 'normal' }],
+        '42-700': ['42px', { fontWeight: '700', lineHeight: 'normal' }],
+        '36-700': ['36px', { fontWeight: '700', lineHeight: 'normal' }],
+        '32-700': ['32px', { fontWeight: '700', lineHeight: 'normal' }],
 
-        '26-700': ['26px', { fontWeight: '700', lineHeight: '100%' }],
-        '26-400': ['26px', { fontWeight: '400', lineHeight: '100%' }],
+        '26-700': ['26px', { fontWeight: '700', lineHeight: 'normal' }],
+        '26-400': ['26px', { fontWeight: '400', lineHeight: 'normal' }],
 
-        '24-700': ['24px', { fontWeight: '700', lineHeight: '100%' }],
-        '24-400': ['24px', { fontWeight: '400', lineHeight: '100%' }],
+        '24-700': ['24px', { fontWeight: '700', lineHeight: 'normal' }],
+        '24-400': ['24px', { fontWeight: '400', lineHeight: 'normal' }],
 
-        '18-700': ['18px', { fontWeight: '700', lineHeight: '100%' }],
+        '18-700': ['18px', { fontWeight: '700', lineHeight: 'normal' }],
 
-        '16-700': ['16px', { fontWeight: '700', lineHeight: '100%' }],
-        '16-400': ['16px', { fontWeight: '400', lineHeight: '100%' }],
+        '16-700': ['16px', { fontWeight: '700', lineHeight: 'normal' }],
+        '16-400': ['16px', { fontWeight: '400', lineHeight: 'normal' }],
+      },
+      height: {
+        header: '80px',
+      },
+      borderRadius: {
+        5: '20px',
       },
     },
     screens: {

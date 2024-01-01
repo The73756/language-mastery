@@ -4,7 +4,11 @@ module.exports = configure({
   allowDebug: process.env.NODE_ENV !== 'production',
 
   presets: [
-    presets.imports(),
+    presets.imports({
+      alias: {
+        '@': './*',
+      },
+    }),
     presets.node(),
     presets.prettier(),
     presets.typescript(),

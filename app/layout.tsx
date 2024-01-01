@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Montserrat, Poppins } from 'next/font/google'
 import { ReactNode } from 'react'
+import { Footer } from '@/components/footer'
+import { Header } from '@/components/header'
 
 const montserrat = Montserrat({
   subsets: ['cyrillic'],
@@ -19,7 +21,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ru" className={`${montserrat.variable} ${poppins.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
