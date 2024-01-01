@@ -9,17 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
+        'primary': {
           DEFAULT: '#4268b1',
           hover: '#3e74dc',
         },
-        accent: {
+        'accent': {
           DEFAULT: '#ff6b6b',
           hover: '#dc5151',
         },
-        gray: '#a0a5b6',
-        lightBlue: '#e8edf3',
-        bg: '#fff',
+        'gray': '#a0a5b6',
+        'light-blue': '#e8edf3',
+        'bg': '#fff',
       },
       fontFamily: {
         montserrat: 'var(--font-montserrat)',

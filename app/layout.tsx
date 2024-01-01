@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="ru" className={`${montserrat.variable} ${poppins.variable}`}>
       <body>
         <Header />
-        {children}
+        <main className="body-height">{children}</main>
         <Footer />
       </body>
     </html>
