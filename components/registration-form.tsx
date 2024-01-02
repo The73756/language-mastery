@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Button } from '@/components/shared/button'
 import { FormWrapper } from '@/components/shared/form-wrapper'
 import { Input } from '@/components/shared/input'
+import { InputPassword } from '@/components/shared/input-password'
 import { Routes } from '@/types/routes'
 
 export const RegistrationForm = () => {
@@ -9,8 +10,14 @@ export const RegistrationForm = () => {
     <FormWrapper title="Регистрация">
       <div className="flex flex-col gap-5 mb-7">
         <Input preset="white" type="text" autoComplete="name" placeholder="Имя пользователя" />
-        <Input preset="white" type="password" autoComplete="new-password" placeholder="Пароль" />
-        <Input
+        <InputPassword
+          preset="white"
+          type="password"
+          autoComplete="new-password"
+          placeholder="Пароль"
+        />
+        <InputPassword
+          hideIcon
           preset="white"
           type="password"
           autoComplete="new-password"

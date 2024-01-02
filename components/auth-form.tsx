@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Button } from '@/components/shared/button'
 import { FormWrapper } from '@/components/shared/form-wrapper'
 import { Input } from '@/components/shared/input'
+import { InputPassword } from '@/components/shared/input-password'
 import { Routes } from '@/types/routes'
 
 export const AuthForm = () => {
@@ -9,7 +10,7 @@ export const AuthForm = () => {
     <FormWrapper title="Вход">
       <div className="flex flex-col gap-5 mb-7">
         <Input preset="white" type="text" autoComplete="name" placeholder="Имя пользователя" />
-        <Input preset="white" type="text" autoComplete="current-password" placeholder="Пароль" />
+        <InputPassword preset="white" autoComplete="current-password" placeholder="Пароль" />
       </div>
 
       <div className="text-16-400 text-white flex justify-between items-center">

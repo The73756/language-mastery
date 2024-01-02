@@ -44,6 +44,7 @@ const config: Config = {
       },
       height: {
         header: '80px',
+        58: '58px',
       },
       borderRadius: {
         5: '20px',
@@ -70,6 +71,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@headlessui/tailwindcss')],
 }
 export default config

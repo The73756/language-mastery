@@ -7,9 +7,9 @@
     @apply font-montserrat bg-bg;
   }
 
-  .body-height {
-    @apply h-[calc(100vh-70px-110px)] md:h-[calc(100vh-70px-180px)];
-  }
+  /*.body-height {*/
+  /*  @apply h-[calc(100vh-70px-110px)] md:h-[calc(100vh-70px-180px)];*/
+  /*}*/
 
   .icon {
     /* reset styles and prevent icon from being selected */
