@@ -53,7 +53,7 @@ export const AdminCard = ({
   }
 
   return (
-    <div className="rounded-3xl p-12 border-2 border-primary w-full flex flex-col gap-4">
+    <div className="rounded-3xl max-md:p-4 max-xl:p-6 p-12 border-2 border-primary w-full flex flex-col gap-4">
       <Dropdown
         selectedOption={selectedOption}
         onSelect={setSelectedOption}

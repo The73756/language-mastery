@@ -8,7 +8,7 @@ import { Routes } from '@/types/routes'
 export const RegistrationForm = () => {
   return (
     <FormWrapper title="Регистрация">
-      <div className="flex flex-col gap-5 mb-7">
+      <div className="flex flex-col gap-3 md:gap-5 mb-7">
         <Input preset="white" type="text" autoComplete="name" placeholder="Имя пользователя" />
         <InputPassword
           preset="white"
@@ -25,7 +25,7 @@ export const RegistrationForm = () => {
         />
       </div>
 
-      <div className="text-16-400 text-white flex justify-between items-center">
+      <div className="text-16-400 flex-wrap gap-5 text-white flex justify-between items-center">
         <div>
           <p>Уже зарегистрированы?</p>
           <Link href={Routes.AUTH} className="underline hover:text-light-blue transition-colors">

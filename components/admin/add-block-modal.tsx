@@ -29,7 +29,7 @@ export const AddBlockModal = () => {
 
   return (
     <div>
-      <h2 className="text-48-700 mb-5 text-primary">Добавить блок</h2>
+      <h2 className="text-32-700 md:text-48-700 mb-5 text-primary">Добавить блок</h2>
       <Dropdown
         placeholder="Выберите тип блока"
         options={dropdownOptions}

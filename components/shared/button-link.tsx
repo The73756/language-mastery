@@ -2,7 +2,7 @@ import { cva, VariantProps } from 'class-variance-authority'
 import { AnchorHTMLAttributes } from 'react'
 
 const buttonLinkVariants = cva(
-  'py-[18px] px-16 block w-fit rounded-full text-white text-24-700 transition-colors',
+  'py-2.5 md:py-[18px] px-10 md:px-16 rounded-full text-white text-16-700 md:text-24-700 transition-colors',
   {
     variants: {
       preset: {

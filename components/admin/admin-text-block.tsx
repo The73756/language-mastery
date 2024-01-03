@@ -23,7 +23,7 @@ export const AdminTextBlock = () => {
     <AdminBlockWrapper title="Блок с изображением и текстом">
       <form className="flex flex-col gap-3">
         <div className="flex flex-wrap gap-5">
-          <div className="flex w-full gap-5 *:w-full">
+          <div className="flex w-full max-lg:flex-wrap gap-4 lg:gap-5 *:flex-[100%] md:*:flex-[calc(50%-40px)] lg:*:w-full">
             <Input placeholder="Ссылка на изображение" />
             <Input placeholder="Заголовок" />
             <Input placeholder="Подзаголовок" />
@@ -36,12 +36,12 @@ export const AdminTextBlock = () => {
           </div>
 
           <div className="flex w-full flex-col gap-5">
-            <div className="flex w-1/2 gap-5 *:w-full">
+            <div className="flex max-md:flex-wrap lg:w-1/2 gap-5 *:w-full">
               <Input placeholder="Кнопка действия текст" />
               <Input placeholder="Кнопка действия ссылка" />
             </div>
-            <div className="flex h-full justify-between items-end">
-              <Textarea placeholder="Текст" className="block w-1/2" />
+            <div className="flex flex-wrap h-full justify-between items-end">
+              <Textarea placeholder="Текст" className="block w-full max-lg:mb-10 lg:w-1/2" />
               <AdminBlockControl className="ml-auto" />
             </div>
           </div>

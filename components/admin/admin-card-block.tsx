@@ -35,9 +35,9 @@ export const AdminCardBlock = () => {
   return (
     <AdminBlockWrapper title="Блок с тремя карточками" className="flex flex-col">
       <form className="mb-10">
-        <Input placeholder="Заголовок" className="mb-5 w-[360px]" />
+        <Input placeholder="Заголовок" className="mb-5 w-full sm:w-[360px]" />
 
-        <div className="flex gap-5 h-full ">
+        <div className="flex max-lg:flex-wrap gap-5 h-full ">
           {cardData.map((card, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <AdminCard key={index} {...card} />

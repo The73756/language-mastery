@@ -44,7 +44,7 @@ const cards: BenefitsCard[] = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-[80px] container pt-[100px] pb-20">
+    <div className="flex flex-col gap-14 md:gap-[80px] container pt-14 xl:pt-[100px] pb-20">
       <PromoBlock
         imageUrl="/images/promo-1.png"
         title="Наш лучший курс только сегодня"

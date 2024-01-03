@@ -43,14 +43,14 @@ export const ModalWrapper = ({
             >
               <Dialog.Panel
                 className={clsx([
-                  'w-fit relative transform overflow-hidden rounded-3xl bg-white py-11 px-14 text-left align-middle shadow-xl transition-all',
+                  'w-fit relative transform rounded-3xl bg-white py-8 px-6 md:py-11 md:px-14 text-left align-middle shadow-xl',
                   wrapperClass,
                 ])}
               >
                 <button
                   type="button"
                   onClick={onClose}
-                  className="absolute text-gray text-[20px] hover:text-black/60 transition-colors size-5 flex items-center justify-center top-7 right-7"
+                  className="absolute text-gray text-[20px] hover:text-black/60 transition-colors size-5 flex items-center justify-center top-4 right-4 md:top-7 md:right-7"
                 >
                   <Icon name="shared/cross" />
                 </button>

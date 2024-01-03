@@ -37,10 +37,16 @@ const config: Config = {
         '24-700': ['24px', { fontWeight: '700', lineHeight: 'normal' }],
         '24-400': ['24px', { fontWeight: '400', lineHeight: 'normal' }],
 
+        '20-700': ['20px', { fontWeight: '700', lineHeight: 'normal' }],
+        '20-400': ['20px', { fontWeight: '400', lineHeight: 'normal' }],
+
         '18-700': ['18px', { fontWeight: '700', lineHeight: 'normal' }],
 
         '16-700': ['16px', { fontWeight: '700', lineHeight: 'normal' }],
         '16-400': ['16px', { fontWeight: '400', lineHeight: 'normal' }],
+
+        '14-400': ['14px', { fontWeight: '400', lineHeight: 'normal' }],
+        '14-700': ['14px', { fontWeight: '700', lineHeight: 'normal' }],
       },
       height: {
         header: '80px',
@@ -52,16 +58,16 @@ const config: Config = {
     },
     screens: {
       sm: '480px',
-      md: '546px',
-      lg: '648px',
+      md: '768px',
+      lg: '1080px',
       xl: '1608px',
     },
     container: {
       center: true,
       screens: {
         sm: '100%',
-        md: '546px',
-        lg: '648px',
+        md: '768px',
+        lg: '1080px',
         xl: '1608px',
       },
       padding: {

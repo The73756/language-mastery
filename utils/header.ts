@@ -2,7 +2,7 @@ import { HeaderLink } from '@/types/header'
 import { Routes } from '@/types/routes'
 
 export const getHeaderLinks = () => {
-  const isAuth = false
+  const isAuth = true
 
   const links: HeaderLink[] = [
     {

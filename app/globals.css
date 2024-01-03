@@ -25,4 +25,20 @@
     /* scale vertically */
     @apply h-[1em];
   }
+
+  .embla-slide {
+    flex: 0 0 45%;
+    min-width: 0;
+  }
+
+  @media (max-width: 1080px) {
+    .embla-slide {
+      flex: 0 0 510px;
+    }
+  }
+  @media (max-width: 648px) {
+    .embla-slide {
+      flex: 0 0 90%;
+    }
+  }
 }

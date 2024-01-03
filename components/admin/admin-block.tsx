@@ -12,7 +12,7 @@ export const AdminBlock = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <div>
-      <h2 className="text-48-700 mb-10 text-primary">Система управления</h2>
+      <h2 className="text-36-700 lg:text-48-700 mb-8 lg:mb-10 text-primary">Система управления</h2>
 
       <div className="flex flex-col gap-5">
         <AdminPromoBlock />
@@ -23,7 +23,7 @@ export const AdminBlock = () => {
       <Button
         preset="accent"
         text="Добавить"
-        className="my-14"
+        className="my-8 lg:my-14"
         onClick={() => setIsModalOpen(true)}
       />
 
