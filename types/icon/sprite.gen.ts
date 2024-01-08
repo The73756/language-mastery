@@ -9,6 +9,7 @@ export interface SpritesMap {
     | 'eye'
     | 'lightning'
     | 'logo-colored'
+    | 'updated'
 }
 export const SPRITES_META: {
   [Key in keyof SpritesMap]: {
@@ -70,6 +71,11 @@ export const SPRITES_META: {
         viewBox: '0 0 64 50',
         width: 64,
         height: 50,
+      },
+      'updated': {
+        viewBox: '0 0 512 434',
+        width: 512,
+        height: 434,
       },
     },
   },
